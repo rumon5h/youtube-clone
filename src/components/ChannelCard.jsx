@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { demoProfilePicture } from "../utils/constants";
 
-const ChannelCard = ({ channelDetails }) => {
+const ChannelCard = ({ channelDetails,marginTop }) => {
   return (
     <Box
       sx={{
@@ -15,7 +15,8 @@ const ChannelCard = ({ channelDetails }) => {
         alignItems: 'center',
         width: {xs: '356px', md: '320px'},
         height: '326px',
-        margin: 'auto'
+        margin: 'auto',
+        marginTop
       }}
     >
       <Link to={`/channel/${channelDetails?.id?.channelId}`}>
