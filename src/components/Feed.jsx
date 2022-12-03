@@ -12,7 +12,7 @@ const Feed = () => {
     },[selectedCategory])
     return (
         <Stack sx={{flexDirection: {sx: 'column', md: 'row'}}}>
-            <Box sx={{height: {sx: 'auto', md: 'fit-content'}, borderRight: '1px solid #3d3d3d', px:{sx:0, md: 2}}}>
+            <Box sx={{height: {sx: 'auto', md: 'fit-content', overflowX: 'scroll'}, borderRight: '1px solid #3d3d3d', px:{sx:0, md: 2}}}>
 
             <SideBar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
 
